@@ -1,0 +1,31 @@
+/* Extras for the static prototype: banner, role picker and the fictional portal simulator. */
+.demo-banner { background: var(--amber-soft); color: #5a3d00; border: 1px solid #f0cf86; border-radius: 12px; padding: 10px 14px; margin-bottom: 14px; font-size: .88rem; }
+@media (prefers-color-scheme: dark) { .demo-banner { color: #ffd98a; border-color: #5c4412; } }
+.demo-banner a, .demo-banner .link-btn { color: inherit; font-weight: 700; }
+.demo-banner .link-btn { display: inline; }
+.role-pick { display: block; font-size: .78rem; font-weight: 600; margin: 6px 0 0; color: #c5ccd9; }
+.role-pick select { min-height: 36px; padding: 4px 8px; font-size: .85rem; background: #1b2638; color: #fff; border-color: #33425c; }
+@media (max-width: 899px) { .role-pick { display: flex; align-items: center; gap: 8px; margin: 0; } .topbar .who { text-align: right; } }
+.nav .count, .tabs .count { font-size: .7rem; }
+.tabs.always { display: flex; }
+
+body.portal { background: #eef2f7; }
+.portal-head { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background: #12355b; color: #fff; }
+.portal-logo { font-size: 1.3rem; letter-spacing: .01em; } .portal-logo strong { color: #7cc4ff; }
+.portal-tag { background: #ffd24a; color: #3b2b00; font-weight: 800; font-size: .72rem; padding: 3px 10px; border-radius: 999px; }
+.portal-main { max-width: 1100px; margin: 0 auto; padding: 18px 16px 40px; color: #111; }
+.portal-banner { background: #fff8e1; color: #4a3600; border: 1px solid #f3d27a; border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; }
+.portal-grid { display: grid; gap: 14px; margin-top: 14px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.portal-card { background: #fff; color: #111; border: 1px solid #d9e1ec; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 6px; }
+.portal-card .muted { color: #5b667a; }
+.portal-photo { height: 110px; border-radius: 10px; background: linear-gradient(135deg, #c9d8ea, #e8eef6); display: grid; place-items: center; font-size: 2.6rem; font-weight: 800; color: #12355b; }
+.portal-price { font-size: 1.3rem; font-weight: 800; color: #12355b; margin: 0; }
+.portal-card h2 { font-size: 1rem; }
+.portal-card summary { list-style: none; cursor: pointer; }
+.portal-card summary::-webkit-details-marker { display: none; }
+.portal-card form { margin-top: 10px; }
+.portal-card label { color: #111; }
+body.portal .center-card .card { background: #fff; color: #111; }
+body.portal .center-card .muted { color: #5b667a; }
+ol.steps { padding-left: 20px; display: grid; gap: 6px; margin: 0; }
+@media print { .demo-banner { display: none !important; } }
